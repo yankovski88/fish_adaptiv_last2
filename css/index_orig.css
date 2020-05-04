@@ -7,6 +7,7 @@ body{
     font-weight: 600;
     /*display: flex;*/
     /*justify-content: center;*/
+    background: white;
 
 }
 .norway_fon{
@@ -20,12 +21,36 @@ body{
 }
 
 .container{
+    max-width: 1600px;
     display: flex;
-
     margin: 0 auto;
     justify-content: space-around;
+    border: black solid 1px;
+    flex-direction: row-reverse;
 
 }
+
+@media (max-width: 1600px) {
+    .container{
+        max-width: 970px;
+        background: red;
+    }
+}
+@media (max-width: 992px) {
+    .container{
+        max-width: 750px;
+        background: blueviolet;
+    }
+}
+@media (max-width: 767px) {
+    .container{
+        max-width: 500px;
+        background: chartreuse;
+
+    }
+}
+
+
 .header{
 
     /*position: fixed;*/
@@ -56,6 +81,7 @@ padding-top: 34px;
     max-width: 1009px;
 
 }
+
 .menu_ul {
     flex-wrap: wrap;
     display: -webkit-flex;
@@ -86,7 +112,7 @@ a{
 
 .Vector_gray{
 /*margin-right: 10px;*/
-     flex-wrap: wrap;
+    flex-wrap: wrap;
     display: flex;
 }
 .flag_krest{
@@ -96,7 +122,7 @@ margin-left: -32px;
     /*display: flex;*/
 }
 .arrow{
-margin-left: 10px;
+    margin-left: 10px;
 }
 
 
@@ -114,18 +140,17 @@ margin-left: 10px;
 }
 .salmonbellies{
     font-family: Gotham Pro;
-font-style: normal;
-font-weight: 900;
-font-size: 28px;
-line-height: 27px;
-text-align: center;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 27px;
+    text-align: center;
 }
 .trout_is_the_new_salmon{
     font-size: 16px;
-line-height: 20px;
+    line-height: 20px;
 /* identical to box height */
-
-text-align: center;
+    text-align: center;
 }
 
 .block_fish_full{
@@ -146,22 +171,37 @@ text-align: center;
 }
 
 .container_Salmon{
-display: flex;
+    display: flex;
     justify-content: center;
+    /*align-items: center;*/ /*не могу использовать т.к. нужен точный margin*/
     border: black solid 1px;
+    /*height: 466px;*/
 }
+
 .container_Salmon_text{
-        /*display: flex;*/
-text-align: center;
-/*justify-content: center;*/
+    display: flex;
+    text-align: center;
     flex-wrap: wrap;
     flex-direction: row;
     border: aqua solid 1px;
     margin-top: 256px;
     max-width: 798px;
+
+
     font-weight: 500;
-font-size: 24px;
-line-height: 38px;
+    font-size: 24px;
+    line-height: 38px;
+}
+
+@media (max-width: 360px) {
+    .container_Salmon_text{
+        display: flex;
+        max-width: none;
+        background: pink;
+        margin-top: 20px;
+        /*align-items: flex-start;*/
+
+    }
 }
 
 .fon_ice_bg{
@@ -186,8 +226,8 @@ line-height: 38px;
 .block2_main_fish{
     border: chartreuse solid 1px;
     font-weight: 300;
-font-size: 36px;
-line-height: 44px;
+    font-size: 36px;
+    line-height: 44px;
 }
 .block2_The_fish{
     border: blueviolet solid 1px;
@@ -207,15 +247,38 @@ line-height: 44px;
     flex-direction: row;
 
     margin: 0 auto;
-justify-content: space-between;
+    justify-content: space-between;
 }
+
+/*@media (max-width: 840px) {*/
+    /*.block2_product_all{*/
+        /*justify-content: space-between;*/
+        /*max-width: 840px;*/
+        /*background: chartreuse;*/
+    /*}*/
+/*}*/
+@media (max-width: 790px) {
+    .block2_product_all{
+        justify-content: center;
+
+        max-width: 790px;
+        background: gray;
+    }
+}
+@media (max-width: 520px) {
+    .block2_product_all{
+        justify-content: center;
+        max-width: none;
+        background: chartreuse;
+    }
+}
+
+
 .block2_product{
     /* не знаю как сделать в одну линию описание*/
-/*max-width: 234px;*/
-/*max-height: 146px;*/
-    border: red solid 1px;
-
-
+    /*max-width: 234px;*/
+    /*max-height: 146px;*/
+    /*border: red solid 1px;*/
 }
 
 .block2_white{
@@ -225,166 +288,465 @@ justify-content: space-between;
     background: white;
     box-shadow: 0px 1px 5px rgba(0, 35, 126, 0.06);
     border-radius: 10px;
-    padding: 10px;
-
+    /*padding: 10px;*/
+    margin-top: 23px;
 }
+
+.fish_kirjolohi-kokonainen{
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 10px;
+}
+.fish_kirjolohifilee{
+    margin-left: 10px;
+    margin-top: 12px;
+    margin-right: 12px;
+}
+.fish_lohi-kokonainen{
+    margin-left: 8px;
+    margin-right: 9px;
+    margin-top: 8px;
+}
+.fish_norjalainen-lohifilee{
+    margin-left: 13px;
+    margin-right: 6px;
+    margin-top: 12px;
+}
+
+
+.fish_siika-kasvatettu-villi{
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-top: 11px;
+}
+.fish_siikafilee-suomulla-suomustettu-ruodoton{
+    margin-left: 9px;
+    margin-right: 11px;
+    margin-top: 13px;
+}
+.fish_taimen{
+    margin-left: 14px;
+    margin-right: 15px;
+    margin-top: 14px;
+}
+.fish_kalaneuvos-tuore-taimenfilee-syvatty-web{
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 9px;
+}
+
 .block2_product_discription{
     display: flex;
-border: black solid 1px;
-line-height: 22px;
-/* or 157% */
-/*margin-bottom: 190px;*/
-text-align: center;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-.fon_ice_bg_container2_2{
-    max-width: 1140px;
-    margin-top: 29px;
-    display: flex;
-    border: black solid 1px;
-    flex-direction: row;
-    /*flex-wrap: wrap;*/
-    text-align: center;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-.block2_2_white{
-        display: flex;
-    width: 262px;
-    height: 240px;
-    background: white;
-    box-shadow: 0px 1px 5px rgba(0, 35, 126, 0.06);
-    border-radius: 10px;
-    /*padding: 10px;*/
-
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
-}
-
-.block2_2_product_discription_all{
-
-
-     max-width: 1140px;
-    /*margin-top: 29px;*/
-    display: flex;
-    border: black solid 1px;
-    flex-direction: row;
-    /*flex-wrap: wrap;*/
-    text-align: center;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
-
-
-
-}
-
-.block2_2_product_discription{
-    margin-top: -63px;
-    border: chartreuse solid 1px;
-    display: flex;
+    /*border: black solid 1px;*/
     line-height: 22px;
-/*!* or 157% *!*/
-
-    flex-direction: row;
-    flex-wrap: wrap;
-text-align: center;
-    /*!*margin-left: -300px;*!*/
+    text-align: center;
     justify-content: center;
-
-
-
+    margin-top: 14px;
+    /*margin-bottom: 19px; !*don't work*!*/
 }
-.aa{
-    width: 262px;
-   /*margin-left: 37px;*/
-
+.block2_product_discription__kirjolohi-kokonainen{
+    margin-top: 13px;
 }
-.dd{
-    width: 262px;
-    /*margin-right: 19px;*/
+.block2_product_discription_siika-kasvatettu-villi{
+    margin-top: 11px;
 }
-.bb{
-    width: 262px;
+.block2_product_discription__siikafilee-suomulla-suomustettu-ruodoton{
+    margin-top: 15px;
 }
-.cc{
-    width: 262px;
+.block2_product_discription__taimen{
+    margin-top: 17px;
 }
-.block2_2_product_picter_all{
-    display: flex;
-    border: #00519C solid 1px;
-    max-width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: space-between;
-    /*align-items: center;*/
-margin-top: -236px;
-
-}
-.block2_2_product_picter{
-    display: flex;
-    border: coral solid 1px;
-
-
-}
-.picteraa{
-    max-width: 100%;
-    margin-left: 7px;
-}
-.picterdd{
-       max-width: 100%;
-    margin-right: 8px;
-}
-.picterbb{
-    max-width: 100%;
-
-}
-.pictercc{
-    max-width: 100%;
-
+.block2_product_discription__kalaneuvos-tuore-taimenfilee-syvatty-web{
+    margin-top: 15px;
 }
 .btn{
-    display: flex;
-    max-width: 226px;
-max-height: 46px;
-background: #00519C;
-border-radius: 23px;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 108px;
-
+    background: #00519C;
 }
+
+.block2__btn_ice_bg{
+    border-radius: 23px;
+    display: flex;
+    width: 226px;
+    height: 46px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .btn:hover{
     background:blueviolet;
 }
-
-.btn_ice_bg_one{
+.block2__btn{
     display: flex;
-font-weight: 500;
-font-size: 18px;
-line-height: 24px;
-/* identical to box height, or 133% */
+    align-items: center;
+    /*border: black solid 1px;*/
+    margin-top: 36px;
+}
 
-text-align: center;
-margin-top: 11px;
-    margin-bottom: 11px;
+/*start use БЭМ*/
+.block{
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-color: #FFFFFF;
+    border: green solid 1px;
 }
+.block3{
+    /*border: black solid 1px;*/
+    max-height: 262px;
+    margin-top: 32px;
+}
+
+
+
+
+.block3__title_row{
+    border: black solid 1px;
+    display: flex;
+    max-width: 391px;
+    margin-top: 69px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.block3__title{
+    padding: 0 15px;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.block3__btn_row{
+    border: black solid 1px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 744px;
+    height: 149px;
+    margin: 0 auto;
+}
+@media (max-width: 720px) {
+    .block3__btn_row{
+        justify-content: center;
+        max-width: 521px;
+        background: chartreuse;
+
+    }
+}
+@media (max-width: 520px) {
+    .block3__btn_row{
+        justify-content: center;
+        max-width: none;
+        background: chartreuse;
+
+    }
+}
+.btn_link{
+
+    border: 1px solid #1C75B7;
+    box-sizing: border-box;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    /*border: #00519C solid 1px;*/
+    width: 356px;
+    height: 50px;
+    /*margin: 0 auto;*/
+}
+.btn_link:hover{
+    background: red;
+}
+.picter{
+    padding-left: 39.8px;
+}
+.btn_text{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    /* or 133% */
+    color: #00519C;
+    text-align: center;
+    border: black solid 1px;
+    margin: 0 auto;
+}
+
+.title{
+    /*modificator all title*/
+    color: #00519C;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+
+}
+.block4{
+
+    background: #EDF8FF;
+    max-width: 1600px;
+    height: 630px;
+}
+@media (max-width: 1130px) {
+    .block4{
+        /*display: flex;*/
+        /*flex-direction: row-reverse;*/
+        /*justify-content: center;*/
+        /*justify-items: center;*/
+        height: 1010px;
+        max-width: 1130px;
+        background: #EDF8FF;
+        border: brown solid 1px;
+    }
+}
+
+@media (max-width: 620px) {
+    .block4{
+        /*display: flex;*/
+        /*!*justify-content: center;*!*/
+        height: 1010px;
+        max-width: 620px;
+        background: #EDF8FF;
+        border: blue solid 1px;
+    }
+}
+
+@media (max-width: 520px) {
+    .block4{
+        /*justify-content: center;*/
+        max-width: none;
+        background: #EDF8FF;
+        height: 1015px;
+        border: deeppink solid 1px;
+    }
+}
+.block4__title{
+    border: black solid 1px;
+    max-width: 161px;
+    height: 44px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+@media (max-width: 1120px) {
+    .block4__bl_left_right{
+        max-width: 1120px;
+        background: gray;
+        border: red solid 1px;
+    }
+}
+@media (max-width: 620px) {
+    .block4__bl_left_right{
+        max-width: 620px;
+        background: #EDF8FF;
+        border: red solid 1px;
+    }
+}
+@media (max-width: 520px) {
+    .block4__bl_left_right{
+        max-width: none;
+        background: #EDF8FF;
+        height: 750px;
+    }
+}
+.block4__bl_left_right{
+    display: flex;
+    /*group block*/
+    flex-direction: row;
+    /*horizontal with left to right*/
+    flex-wrap: wrap;
+    /*cujenie horizontali vedet to pereskakivaniu stroki with l to r*/
+    justify-content: space-between;
+    /*uperet in left and right*/
+    margin-top: 33px;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /*border: blueviolet solid 1px;*/
+
+}
+@media (max-width: 1120px) {
+    .bl{
+        /*display: flex;*/
+        /*flex-direction: row-reverse;*/
+        margin: 0 auto;
+        /*justify-content: center;*/
+        /*align-content: center;*/
+        /*justify-items: center;*/
+        /*height: 950px;*/
+        max-width: 1120px;
+        /*background: black;*/
+        border: green solid 1px;
+        margin-top: 30px;
+    }
+}
+@media (max-width: 790px) {
+    .bl{
+        /*display: flex;*/
+        /*flex-direction: row-reverse;*/
+        /*justify-content: center;*/
+        /*justify-items: center;*/
+        margin: 0 auto;
+        margin-top: 30px;
+        /*height: 950px;*/
+        max-width: 790px;
+        background: #EDF8FF;
+        border: black solid 1px;
+    }
+}
+@media (max-width: 630px) {
+    .bl{
+        /*justify-content: center;*/
+        margin: 0 auto;
+        margin-top: 30px;
+        max-width: none;
+        border: blue solid 1px;
+    }
+}
+.bl{
+    max-width: 555px;
+    height: 342px;
+    /*margin-left: 230px;*/
+
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 5px rgba(0, 35, 126, 0.06);
+    border-radius: 10px;
+}
+
+
+.pic{
+    max-width: 100%;
+}
+.left_title{
+    max-width: 496px;
+    height: 46px;
+    margin-top: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    /*border: red solid 1px;*/
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    text-align: center;
+    color: #00519C;
+}
+@media (max-width: 321px) {
+    .left_text{
+        padding-top: 30px;
+        max-width: none;
+    }
+}
+.left_text{
+    max-width: 500px;
+    height: 74px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 13px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
+    /* or 185% */
+
+    text-align: center;
+
+    color: #000000;
+}
+.btn_blue{
+    border: blueviolet;
+}
+.btn_new{
+    /*border: red solid 1px;*/
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+    text-align: center;
+    color: #FFFFFF;
+    /*text-align: center;*/
+
+    max-width: 226px;
+    /*height: 46px;*/
+    background: #00519C;
+    border-radius: 23px;
+
+}
+.block4__btn{
+    padding-left: 37px;
+    padding-right: 37px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+.btn_blue{
+
+}
+.block4__btnn{
+    margin-top: 43px;
+    /*border: blueviolet solid 2px;*/
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
